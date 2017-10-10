@@ -7,11 +7,5 @@
     "dev": "lite-server"
   },
   "author": "darshan",
-  "license": "ISC",
-  "devDependencies": {
-    "lite-server": "^2.3.0"
-  },
-  "dependencies": {
-    "lite-server": "^2.3.0"
-  }
+  "license": "ISC"
 }
