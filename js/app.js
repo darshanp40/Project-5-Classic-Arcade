@@ -1,14 +1,15 @@
+// CONSTANTS used in the code
 const CONSTANTS = {
-  CANVAS_WIDTH: 505,
-  CANVAS_HEIGHT: 606,
-  PLAYER_INITIAL_X: 202,
-  PLAYER_INITIAL_Y: 383,
-  BOTTOM_THRESHOLD: 383,
-  TOP_THRESHOLD: 0,
-  LEFT_THRESHOLD: 2,
-  RIGHT_THRESHOLD: 402,
-  PLAYER_SHIFT_THRESHOLD: 40,
-  NO_OF_ENEMIES: 3
+  CANVAS_WIDTH: 505,            // widht of the game screen
+  CANVAS_HEIGHT: 606,           // height of the game screen
+  PLAYER_INITIAL_X: 202,        // initial x position of the player
+  PLAYER_INITIAL_Y: 383,        // initial y position of the player
+  BOTTOM_THRESHOLD: 383,        // last postion from bottom
+  TOP_THRESHOLD: 0,             // last position from top
+  LEFT_THRESHOLD: 2,            // last position from left
+  RIGHT_THRESHOLD: 402,         // last position from right
+  PLAYER_SHIFT_THRESHOLD: 40,   // depicts how far a player can move on one keypress event
+  NO_OF_ENEMIES: 3              // number of enemies on the canvas
 };
 
 // Enemies our player must avoid
