@@ -8,22 +8,24 @@ const CONSTANTS = {
   TOP_THRESHOLD: 0, // last position from top
   LEFT_THRESHOLD: 2, // last position from left
   RIGHT_THRESHOLD: 402, // last position from right
-  PLAYER_SHIFT_Y_THRESHOLD: 83, // depicts how far a player can move on one keypress event
-  PLAYER_SHIFT_X_THRESHOLD: 101, // depicts how far a player can move on one keypress event
+  PLAYER_SHIFT_Y_THRESHOLD: 83, // depicts how far a player can move to up/down on one keypress event
+  PLAYER_SHIFT_X_THRESHOLD: 101, // depicts how far a player can move to left/right on one keypress event
   NO_OF_ENEMIES: 3 // number of enemies on the canvas
 };
 
+// Base class for the other classes used in the game 
 class GameObject {
   constructor(sprite, posX,posY) {
     this.sprite = sprite;
     this.x = posX;
     this.y = posY;
   }
-  // Draw the enemy on the screen, required method for game
+  // Draw the inherited game object on the screen, required method for game
   render() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
   }
 }
+
 // Enemies our player must avoid
 class Enemy extends GameObject {
   constructor(posX, posY, speed) {
